@@ -2216,7 +2216,8 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			color: #ffffff !important;
+			background-color: #18bfef;
 		}
 
 		input[type="submit"].primary,
@@ -3098,8 +3099,65 @@ input, select, textarea {
 	table.alt tbody tr td {
 		border-color: #eeeeee;
 	}
+	/* Certificate */
+	.certificate {
+		border: 1px solid #eeeeee;
+		padding: 1rem;
+		background-color: rgba(220, 220, 220, 0.25);
+		margin: 1rem 0;
+		text-align: center;
+	}
 
-/* Pagination */
+	.certificate img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.certificate p {
+		margin-top: 1rem;
+	}
+
+/* Add this to your existing CSS or include in a <style> tag in your HTML */
+/* Adjust the width to accommodate 5 skills in a row */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Display 5 items in a row */
+    gap: 20px; /* Adjust the gap between skills */
+    text-align: center;
+}
+
+/* Style each skill container */
+.skill {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the skill image */
+.skill img {
+    max-width: 80px; /* Adjust image width */
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+/* Style the skill title */
+.skill h3 {
+    font-size: 1em;
+    margin: 0;
+	color: #708090;
+}
+
+/* Style the skill description */
+.skill p {
+    font-size: 0.8em;
+    color: #888;
+    margin: 5px 0;
+}
+
+
+	/* Pagination */
 
 	.pagination {
 		display: -moz-inline-flex;
